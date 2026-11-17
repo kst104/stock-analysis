@@ -41,16 +41,21 @@ kst104/github.com-new  ────────┘  통합 콘텐츠 허브 ─�
 ```
 stock-analysis/
 ├── content/
-│   └── 2026-11-16/                     # 1회차 (2026-11-16 월 장마감)
+│   ├── 2026-11-16/                     # 1회차 (2026-11-16 월 장마감)
+│   │   ├── 01_market_daily_insight.md  # 데일리 인사이트 원고
+│   │   └── 03_shorts_market/           # 쇼츠 1편 (장마감 시황)
+│   └── 2026-11-17/                     # 2회차 (2026-11-17 화 장마감)
 │       ├── 01_market_daily_insight.md  # 데일리 인사이트 원고
 │       └── 03_shorts_market/           # 쇼츠 1편 (장마감 시황)
 ├── engine/
 │   └── stock_chalkboard_engine.py      # 칠판 분필 드로잉 쇼츠 렌더 엔진
 ├── scripts/
-│   └── generate_stock_1116_market_shorts.py  # 1회차 시황 쇼츠 생성 스크립트(씬 정의·렌더·리포트)
+│   ├── generate_stock_1116_market_shorts.py  # 1회차 시황 쇼츠 생성 스크립트(씬 정의·렌더·리포트)
+│   └── generate_stock_1117_market_shorts.py  # 2회차 시황 쇼츠 생성 스크립트
 ├── assets/
 │   ├── character/geongtae/             # 겅태 공식 3D 에셋 15종(감정·포즈·회전)
-│   └── chalkboard/stock1116/           # 1회차 시황 칠판 드로잉 원본 6장(v1)
+│   ├── chalkboard/stock1116/           # 1회차 시황 칠판 드로잉 원본 6장(v1)
+│   └── chalkboard/stock1117/           # 2회차 시황 칠판 드로잉 원본 7장(v1)
 ├── fonts/NanumGothic-Bold.ttf          # 렌더링 폰트 (OFL)
 ├── requirements.txt
 └── .gitignore
@@ -91,14 +96,24 @@ python scripts/generate_stock_1116_market_shorts.py
 
 ---
 
-## 4. 2026-11-16 (월) 1회차 결과물
+## 4. 회차별 결과물
+
+### 2026-11-16 (월) 1회차
 
 | 구분 | 파일 | 내용 |
 | --- | --- | --- |
 | 원고 | `content/2026-11-16/01_market_daily_insight.md` | 코스피 5,100.50(-3.59%) 사흘 연속 하락, 외국인 -1조3,838억, 개인 +1조3,398억, 반도체 두 종목이 매도의 61%, 선물은 +3,238억 역방향 |
-| 쇼츠 | `content/2026-11-16/03_shorts_market/stock_chalkboard/` | "외국인이 반도체를 팔고 선물을 산 날" — 6씬, 칠판 특강 |
-| 엔진 | `engine/stock_chalkboard_engine.py` | 칠판 보드·수치 카드·겅태 인서트·면책 고지 상시 노출 |
+| 쇼츠 | `content/2026-11-16/03_shorts_market/stock_chalkboard/` | "외국인이 반도체를 팔고 선물을 산 날" — 6씬 53.6초, 칠판 특강 |
 | 생성기 | `scripts/generate_stock_1116_market_shorts.py` | 씬 정의 + 렌더 + 검증 리포트 자동 생성 |
+
+### 2026-11-17 (화) 2회차
+
+| 구분 | 파일 | 내용 |
+| --- | --- | --- |
+| 원고 | `content/2026-11-17/01_market_daily_insight.md` | 코스피 4,968.48(-2.59%) 종가 5,000선 이탈(2/2 이후 최저), 거래대금 14조1,960억(12년6개월 최소), 외국인 -1조4,430억, 반도체 두 종목 72%, 유틸리티·방산 4%대 하락, 선물 +1,582계약 |
+| 쇼츠 | `content/2026-11-17/03_shorts_market/stock_chalkboard/` | "5,000선이 무너졌는데 외국인은 선물을 샀다" — 7씬 67.4초, 칠판 특강 |
+| 생성기 | `scripts/generate_stock_1117_market_shorts.py` | 2회차 씬 정의 + 렌더 + 검증 리포트 |
+| 엔진 | `engine/stock_chalkboard_engine.py` | 칠판 보드·수치 카드·겅태 인서트·면책 고지 상시 노출(공용) |
 
 ---
 
