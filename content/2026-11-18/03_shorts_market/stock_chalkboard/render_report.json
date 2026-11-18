@@ -1,0 +1,27 @@
+{
+  "file": "downloads/Stock1_1118_장마감_시황_칠판드로잉_쇼츠.mp4",
+  "duration": 57.43,
+  "size_mb": 3.34,
+  "streams": [
+    {
+      "type": "video",
+      "codec": "h264",
+      "w": 1080,
+      "h": 1920,
+      "fps": "25"
+    },
+    {
+      "type": "audio",
+      "codec": "aac",
+      "w": null,
+      "h": null,
+      "fps": null
+    }
+  ],
+  "gif": "downloads/Stock1_1118_미리보기.gif",
+  "captures": [
+    "downloads/Stock1_1118_scene_1.png",
+    "downloads/Stock1_1118_scene_2.png",
+    "downloads/Stock1_1118_scene_3.png"
+  ]
+}

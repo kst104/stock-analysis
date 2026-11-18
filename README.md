@@ -44,18 +44,23 @@ stock-analysis/
 │   ├── 2026-11-16/                     # 1회차 (2026-11-16 월 장마감)
 │   │   ├── 01_market_daily_insight.md  # 데일리 인사이트 원고
 │   │   └── 03_shorts_market/           # 쇼츠 1편 (장마감 시황)
-│   └── 2026-11-17/                     # 2회차 (2026-11-17 화 장마감)
+│   ├── 2026-11-17/                     # 2회차 (2026-11-17 화 장마감)
+│   │   ├── 01_market_daily_insight.md  # 데일리 인사이트 원고
+│   │   └── 03_shorts_market/           # 쇼츠 1편 (장마감 시황)
+│   └── 2026-11-18/                     # 3회차 (2026-11-18 수 장마감)
 │       ├── 01_market_daily_insight.md  # 데일리 인사이트 원고
 │       └── 03_shorts_market/           # 쇼츠 1편 (장마감 시황)
 ├── engine/
 │   └── stock_chalkboard_engine.py      # 칠판 분필 드로잉 쇼츠 렌더 엔진
 ├── scripts/
 │   ├── generate_stock_1116_market_shorts.py  # 1회차 시황 쇼츠 생성 스크립트(씬 정의·렌더·리포트)
-│   └── generate_stock_1117_market_shorts.py  # 2회차 시황 쇼츠 생성 스크립트
+│   ├── generate_stock_1117_market_shorts.py  # 2회차 시황 쇼츠 생성 스크립트
+│   └── generate_stock_1118_market_shorts.py  # 3회차 시황 쇼츠 생성 스크립트
 ├── assets/
 │   ├── character/geongtae/             # 겅태 공식 3D 에셋 15종(감정·포즈·회전)
 │   ├── chalkboard/stock1116/           # 1회차 시황 칠판 드로잉 원본 6장(v1)
-│   └── chalkboard/stock1117/           # 2회차 시황 칠판 드로잉 원본 7장(v1)
+│   ├── chalkboard/stock1117/           # 2회차 시황 칠판 드로잉 원본 7장(v1)
+│   └── chalkboard/stock1118/           # 3회차 시황 칠판 드로잉 원본 7장(v1)
 ├── fonts/NanumGothic-Bold.ttf          # 렌더링 폰트 (OFL)
 ├── requirements.txt
 └── .gitignore
@@ -114,6 +119,14 @@ python scripts/generate_stock_1116_market_shorts.py
 | 쇼츠 | `content/2026-11-17/03_shorts_market/stock_chalkboard/` | "5,000선이 무너졌는데 외국인은 선물을 샀다" — 7씬 67.4초, 칠판 특강 |
 | 생성기 | `scripts/generate_stock_1117_market_shorts.py` | 2회차 씬 정의 + 렌더 + 검증 리포트 |
 | 엔진 | `engine/stock_chalkboard_engine.py` | 칠판 보드·수치 카드·겅태 인서트·면책 고지 상시 노출(공용) |
+
+### 2026-11-18 (수) 3회차
+
+| 구분 | 파일 | 내용 |
+| --- | --- | --- |
+| 원고 | `content/2026-11-18/01_market_daily_insight.md` | 코스피 5,067.44(+1.99%) 하루 만에 5,000선 회복, 일중 189.97p(고 5,133.14·저 4,943.17), 거래대금 20조3,426억(+43.3%), 외국인 -3,338억 4일째·개인 -6,380억 vs 기관 +5,118억·기타법인 +4,600억, 외국인 선물 장중 +2,145→종가 -323계약 |
+| 쇼츠 | `content/2026-11-18/03_shorts_market/stock_chalkboard/` | "5,000선을 되찾았는데 외국인은 다 팔았다" — 6씬 57.4초, 칠판 특강 |
+| 생성기 | `scripts/generate_stock_1118_market_shorts.py` | 3회차 씬 정의 + 렌더 + 검증 리포트 |
 
 ---
 
