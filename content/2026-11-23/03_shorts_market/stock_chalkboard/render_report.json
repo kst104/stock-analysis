@@ -1,0 +1,25 @@
+{
+  "file": "downloads/Stock1_1123_장마감_시황_칠판드로잉_쇼츠.mp4",
+  "duration": 61.21,
+  "size_mb": 2.7,
+  "streams": [
+    {
+      "type": "video",
+      "w": 1080,
+      "h": 1920,
+      "fps": "25"
+    },
+    {
+      "type": "audio"
+    }
+  ],
+  "gif": "downloads/Stock1_1123_미리보기.gif",
+  "captures": [
+    "downloads/Stock1_1123_scene_1.png",
+    "downloads/Stock1_1123_scene_2.png",
+    "downloads/Stock1_1123_scene_3.png"
+  ],
+  "layout": "jaljab(올.주.선.이 3단)",
+  "subscribe_badge": "0.0~2.0s",
+  "direction_cut": "last scene (오늘의 방향 / 내일의 예상 / 11/23~ 집계 시작)"
+}
