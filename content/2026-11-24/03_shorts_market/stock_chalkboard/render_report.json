@@ -1,0 +1,78 @@
+{
+  "file": "downloads/Stock1_1124_장마감_시황_칠판드로잉_쇼츠.mp4",
+  "duration": 58.4,
+  "size_mb": 2.53,
+  "streams": [
+    {
+      "type": "video",
+      "w": 1080,
+      "h": 1920,
+      "fps": "25"
+    },
+    {
+      "type": "audio"
+    }
+  ],
+  "gif": "downloads/Stock1_1124_미리보기.gif",
+  "captures": [
+    "downloads/Stock1_1124_scene_1.png",
+    "downloads/Stock1_1124_scene_2.png",
+    "downloads/Stock1_1124_scene_3.png"
+  ],
+  "last_cut": "downloads/Stock1_1124_마지막2초컷.png",
+  "timings": [
+    {
+      "scene": 1,
+      "topic": "코스피 +6.32%",
+      "start": 0.0,
+      "end": 9.23,
+      "seconds": 9.23
+    },
+    {
+      "scene": 2,
+      "topic": "시가가 저가",
+      "start": 9.23,
+      "end": 17.79,
+      "seconds": 8.56
+    },
+    {
+      "scene": 3,
+      "topic": "매수 사이드카",
+      "start": 17.79,
+      "end": 25.27,
+      "seconds": 7.48
+    },
+    {
+      "scene": 4,
+      "topic": "외국인 8거래일 만에 매수",
+      "start": 25.27,
+      "end": 34.43,
+      "seconds": 9.16
+    },
+    {
+      "scene": 5,
+      "topic": "반도체·로봇 강세",
+      "start": 34.43,
+      "end": 44.21,
+      "seconds": 9.78
+    },
+    {
+      "scene": 6,
+      "topic": "선물 778.10 · 베이시스 -0.58",
+      "start": 44.21,
+      "end": 52.05,
+      "seconds": 7.84
+    },
+    {
+      "scene": 7,
+      "topic": "오늘·내일 방향",
+      "start": 52.05,
+      "end": 60.49,
+      "seconds": 6.44,
+      "hold": 2.0
+    }
+  ],
+  "layout": "jaljab(올.주.선.이 3단)",
+  "subscribe_badge": "0.0~2.0s",
+  "direction_cut": "last scene (오늘의 방향 ▲ 강위 / 내일의 예상 ▲ 강위 / 11/23~ 적중률 100.0% (1/1))"
+}
